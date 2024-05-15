@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Your Page Title</title>
+        <link rel="stylesheet" href="login.css">
+        <script src="login.js" defer></script>
+    </head>
+<body>
+    <h1>"Power Up Your Voice: Crush Apathy, Crush Votes! Your Duty, Your Democracy"</h1>
+    <p>
+        Voting is super important! It's not just a right, but a big job we all have.<br>
+        When we vote, we help decide things like how our schools work, how we get healthcare, and what rules we all follow.<br>
+        It's like having a say in what happens in our community and country. Voting is our duty because it's how we make sure our leaders listen to what we want.<br>
+        It's kind of like a superpower that lets us shape the future and keep our country fair and awesome. So, when we vote, we're making sure our voices count!
+    </p>
+
+    <section>
+        <h2>Why Vote is important ?</h2>
+        <p>Check out this video to understand the importance of voting:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ucTLKmvCyUI" frameborder="0" allowfullscreen></iframe>
+    </section>
+    <form action="login_process.php" method="post" onsubmit="return validateForm()">
+        <h2>Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required autocomplete="username">
+    
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required autocomplete="current-password">
+    
+       
+        <button type="button" onclick="window.location.href='index.html'">Go to Login Page</button>
+    
+        <div class="forgot-password">
+            <a href="https://support.google.com/accounts/answer/41078?hl=en&co=GENIE.Platform%3DDesktop" title="Forgot Password">Forgot Password?</a>
+            
+        </div>
+    </form>
+</body>
+</html>
+
