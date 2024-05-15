@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+l  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel='icon' href='images/logo.jpg' type='image/jpg'>
+  <link rel="stylesheet" href="style.css">
+  <title>ELECTIONS</title>
+  </head>
+  <body>
+
+    <div class='container'>
+      <div class='banner'>
+        <h1>ELECTION 2023 ONLINE PORTAL</h1>
+      </div>
+      <div class='voteContainer'>
+        <div class='voterDetails'>
+          <img src="C:\Users\Lenovo\Downloads\bjp.jpeg" alt='BJP' class='voteImg'>
+          <p class='voterName'>B.J.P</p>
+          <button class='voteBtn'>Vote</button>
+        </div>
+        <div class='voterDetails'>
+          <img src="C:\Users\Lenovo\Downloads\aap.webp" alt ='AAP' class='voteImg'>
+          <p class='voterName'>A.A.P</p>
+          <button class='voteBtn'>Vote</button>
+        </div>
+        
+        <div class='voterDetails'>
+          <img src="C:\Users\Lenovo\Downloads\akalidal.jpeg" alt="AKALI DAL" class='voteImg'>
+          <p class='voterName'>AKALI DAL   </p>
+          <button class='voteBtn'>Vote</button>
+        </div>
+        
+        <div class='voterDetails'>
+          <img src="C:\Users\Lenovo\Downloads\congress.png" alt="CONGRESS" class='voteImg'>
+          <p class='voterName'>CONGRESS     </p>
+          <button class='voteBtn'>Vote</button>
+        </div>
+        <div class='voterDetails'>
+          <img src="C:\Users\Lenovo\Downloads\nota.png" alt='NOTA' class='voteImg'>
+          <p class='voterName'>NOTA     </p>
+          <button class='voteBtn'>vote</button>
+        </div>
+      </div>
+      <p id='text'><b>ELECTION VOTING </b>Election Voting Status will be updated from time to time. Details of how many votes got to each party will be shown in a number of votes and percentage of votes clearly. Voting done through <b>OFFICIAL WEBSITE </b>and <b>OFFLINE CENTER </b> will only be counted.
+      </p>
+      <p id='poll'>ELECTION 2023</p>
+      <div class='loading'>
+        <p>Please wait few seconds while the poll is loading…</p>
+      </div>
+      <div class='radioContainer'>
+        <h2 style="color: rebeccapurple;"> VOTE FOR YOUR REPRESENTATIVE</h2>
+        <div class='radio'>
+          <p>Choose One Answer</p>
+          <div class='labelContainer'>
+            <input type='radio' name='vote' id='vote1' value='0'>
+            <label for='vote1'>BHARATIYA JANATA PARTY</label>
+          </div>
+          <div class='labelContainer'>
+            <input type='radio' name='vote' id='vote2' value='1'>
+            <label for='vote2'>AAM ADAMI PARTY</label>
+          </div>
+          <div class='labelContainer'>
+            <input type='radio' name='vote' id='vote3' value='2'>
+            <label for='vote3'>AKALI DAL</label>
+          </div>
+          <div class='labelContainer'>
+            <input type='radio' name='vote' id='vote4' value='3'>
+            <label for='vote4'>CONGRESS</label>
+          </div>
+          <div class='labelContainer'>
+            <input type='radio' name='vote' id='vote5' value='4'>
+            <label for='vote5'>NOTA</label>
+          </div>
+          <div class='buttons'>
+            <button type='button' onclick='displayRadioValue()'class='voteCastBtn'>Vote</button>
+            <button class='resultsBtn'>Show Results</button>
+          </div>
+        </div>
+      </div>
+      <div class='tableContent'>
+        <h1>PARTY ELECTIONS</h1>
+        <h2>ELECTION VOTING RESULT (Week 1)</h2>
+      </div>
+      <table>
+        <tr>
+          <th>Position</th>
+          <th>PARTY</th>
+          <th>Percentage</th>
+          <th>No. Of Votes</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>BJP</td>
+          <td class='percentageCount'></td>
+          <td class='voteCount'></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>AAP</td>
+          <td class='percentageCount'></td>
+          <td class='voteCount'></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>AKALI</td>
+          <td class='percentageCount'></td>
+          <td class='voteCount'></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>CONGRESS</td>
+          <td class='percentageCount'></td>
+          <td class='voteCount'></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>NOTA</td>
+          <td class='percentageCount'></td>
+          <td class='voteCount'></td>
+        </tr>
+      </table>
+      <div class='bottomContainer'>
+        <div class='content'>
+          <span class='side'>BHARATIYA JANTA PARTY</sp>
+          <span class='right votePercentage'></span>
+        </div>
+        
+        <div class='barContainer'>
+          <div class='bar1 bar'></div>
+        </div>
+        
+        <div class='content'>
+          <span class='side'>AAM ADAMI PARTY</span>
+          <span class='right votePercentage'></span>
+        </div>
+        
+        <div class='barContainer'>
+          <div class='bar2 bar'></div>
+        </div>
+        
+        <div class="content">
+          <span class='side'>AKALI DAL</span>
+          <span class='right votePercentage'></sp>
+        </div>
+        
+        <div class='barContainer'>
+          <div class='bar3 bar'></div>
+        </div>
+        
+        <div class="content">
+          <span class='side'>CONGRESS</sp>
+          <span class='right votePercentage'></span>
+        </div>
+        
+        <div class='barContainer'>
+          <div class='bar4 bar'></div>
+        </div>
+       
+        <div class="content">
+          <span class='side'>NOTA</span>
+          <span class='right votePercentage'></span>
+        </div>
+        
+        <div class='barContainer'>
+          <div class='bar5 bar'></div>
+        </div>
+        
+      </div>
+      <h1 class='total'></h1>
+    </div>  
+    <!-- <script src='script.js'></script> -->
+  </body>  
+  </html>
